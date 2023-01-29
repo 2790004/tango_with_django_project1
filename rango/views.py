@@ -40,14 +40,11 @@ def show_category(request, category_name_slug):
 
     return render(request, 'rango/category.html', context=context_dict)"""
 
-
 def index(request):
-    return HttpResponse("Rango says hey there partner!\n <a href='/rango/about/'>About</a>", )
+    return HttpResponse("Rango says hey there partner!\n <a href='/rango/about/'>About</a>")
 
 
 def about(request):
     return HttpResponse("Rango says here is the about page.\n <a href='/rango/'>Index</a>")
-
-
 
 
